@@ -1,0 +1,24 @@
+<%- include('../partials/header'); %>
+
+<div class="contactForm">
+    <p class="">Envíanos un correo para ponernos en contacto, nosotros te responderemos a la brevedad.</p>
+    <form class="font-weight-bold" id="formContact">
+        <div class="form-group">
+            <label for="name">Nombre Completo<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrònica<span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+            <label for="comments">Coemntario o Mensaje<span class="text-danger">*</span></label>
+            <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<script src="/js/contact.js"></script>
+
+<%- include('../partials/footer'); %>

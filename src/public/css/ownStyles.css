@@ -1,0 +1,364 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+body .card-title img {
+  width: 50px;
+}
+body .card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .MainBar {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  padding: 1.5%;
+}
+body .MainBar .brandDescription {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+body .MainBar .brandDescription a {
+  text-decoration: none;
+}
+body .MainBar .brandDescription a img {
+  width: 70px;
+}
+body .MainBar .brandDescription .linkDescription {
+  margin-left: 1%;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+body .MainBar .buttonContact {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .MainBar .buttonContact a {
+  text-decoration: none;
+}
+body .MainBar .buttonContact a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .MainBar .buttonContact a span img {
+  width: 20px;
+}
+body .ServiciosTitle {
+  margin-top: 7%;
+  max-width: 1440px;
+}
+body .ProyectoTitle {
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 5%;
+}
+body .tarjetas {
+  max-width: 1440px;
+}
+body .tarjetas .cardService a {
+  text-decoration: none;
+}
+body .ContactanosBottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 13%;
+}
+body .ContactanosBottom a {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+body .ContactanosBottom a span {
+  width: 70%;
+  font-size: larger;
+}
+body .ContactanosBottom a span img {
+  width: 20px;
+}
+body .footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.5%;
+  background-color: #01012F;
+}
+body .footer .mainFooter {
+  max-width: 1440px;
+  width: 100%;
+  color: white;
+  display: flex;
+  padding: 2% 0 1.5% 1%;
+}
+body .footer .mainFooter .leftContent {
+  width: 70%;
+}
+body .footer .mainFooter .leftContent .nosotrosTitle {
+  width: 100%;
+  font-size: larger;
+  font-weight: 700;
+  border-left: 3px solid #007BFF;
+  margin-left: 2.5%;
+  padding-left: 1.7%;
+}
+body .footer .mainFooter .leftContent .nosotrosInfo {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+body .footer .mainFooter .leftContent .nosotrosInfo .one {
+  width: 45%;
+}
+body .footer .mainFooter .leftContent .nosotrosInfo .one p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .footer .mainFooter .leftContent .nosotrosInfo .one p img {
+  margin-right: 4%;
+  width: 16px;
+}
+body .footer .mainFooter .rightContent {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid #007BFF;
+}
+body .contactForm {
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 2.4%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+body .contactForm form {
+  width: 55%;
+}
+body .mainTitleLandings {
+  max-width: 1440px;
+  padding: 0% 5% 2% 5%;
+  border-bottom: 2px solid gray;
+  margin-top: 5%;
+}
+body .mainTitleLandings .h1 {
+  font-size: 3rem;
+  color: #007BFF;
+  font-weight: 800;
+}
+body .landingBanner {
+  max-width: 1440px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  margin-top: 5%;
+}
+body .landingBanner .imgBanner {
+  width: 30%;
+}
+body .landingBanner .imgBanner .roundedDiv {
+  background-color: orange;
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+  background-image: url(../IMG/googleBanner.jpg);
+}
+body .landingBanner .imgBanner .roundedDiv img {
+  width: 100%;
+}
+body .landingBanner .infoBanner {
+  width: 70%;
+}
+body .landingBanner .infoBanner .h2 {
+  color: #FF6900;
+}
+body .SubTitle {
+  max-width: 1440px;
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+body .callToAction {
+  width: 80%;
+  max-width: 1440px;
+  display: flex;
+  align-self: center;
+  margin-top: 10%;
+}
+body .callToAction .callText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+body .callToAction .callText .h2 {
+  color: #FF6900;
+}
+body .callToAction .callButton {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .callToAction .callButton a {
+  font-size: large;
+}
+body .FrequentQuestions {
+  width: 80%;
+  max-width: 1440px;
+  margin-top: 5%;
+}
+body .FrequentQuestions .FrequentQuestionsTitle {
+  width: 100%;
+}
+body .FrequentQuestions .FrequentQuestionsTitle .h2 {
+  color: #01012F;
+}
+body .FrequentQuestions .FrequentQuestionsList h5 {
+  color: black;
+}
+body .FrequentQuestions .FrequentQuestionsList li {
+  color: #FF6900;
+  font-size: large;
+}
+body .FrequentQuestions .FrequentQuestionsList li span {
+  color: #504c4c;
+  font-size: large;
+}
+
+@media (max-width: 991px) {
+  body {
+    font-family: "Nunito", sans-serif;
+  }
+  body .contactForm {
+    width: 100%;
+    padding-left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .contactForm p {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  body .contactForm form {
+    width: 90%;
+  }
+  body .contactForm form button {
+    align-self: center;
+    width: 100%;
+  }
+  body .MainBar {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .MainBar .brandDescription {
+    width: 100%;
+    align-items: center;
+    margin: 5% 0 3%;
+  }
+  body .MainBar .brandDescription .linkDescription {
+    margin-top: 5%;
+  }
+  body .MainBar .brandDescription a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+  }
+  body .MainBar .brandDescription a img {
+    width: 90px;
+    height: 90px;
+  }
+  body .MainBar .buttonContact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  body .ServiciosTitle {
+    margin-top: 8%;
+  }
+  body .ProyectoTitle {
+    margin-top: 5%;
+  }
+  body .footer .mainFooter {
+    flex-direction: column;
+    padding: 0;
+  }
+  body .footer .mainFooter .leftContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .footer .mainFooter .leftContent .nosotrosTitle {
+    width: 54%;
+    font-weight: 700;
+    border-bottom: 3px solid #007BFF;
+    border-left: 0;
+    margin-top: 5%;
+    padding: 0;
+  }
+  body .footer .mainFooter .leftContent .nosotrosInfo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+  }
+  body .footer .mainFooter .leftContent .nosotrosInfo .one {
+    width: 55%;
+  }
+  body .footer .mainFooter .leftContent .nosotrosInfo .one p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body .footer .mainFooter .leftContent .nosotrosInfo .one p img {
+    margin-right: 4%;
+    width: 16px;
+  }
+  body .footer .mainFooter .rightContent {
+    width: 100%;
+    margin-top: 5%;
+    border-left: 0;
+  }
+  body .footer .mainFooter .rightContent p {
+    text-align: center;
+    width: 40%;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 3px solid #007BFF;
+  }
+}
+
+/*# sourceMappingURL=ownStyles.css.map */
