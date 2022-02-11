@@ -2,10 +2,7 @@ const express = require("express");
 const csrf = require("csurf");
 const cookieParser = require("cookie-parser");
 const csrfMiddleware = csrf({ cookie: true });
-
 const router = express.Router();
-
-// Configurations
 
 // Middellwares
 router.use(cookieParser());
@@ -15,7 +12,8 @@ router.use(express.urlencoded({ limit: "50mb", extended: false }));
 // Error by token
 router.use((err, req, res, next) => {
   if (err.code === "EBADCSRFTOKEN") {
-    console.log("[API] Error when validate token csrf:", err.message);
+    console.log("[Server] Error when validate token csrf:", err.message);
+    console.log("[Server] token csrf:", req.cookie);
     return res.status(403).json("Unauthorized");
   }
 
@@ -23,19 +21,16 @@ router.use((err, req, res, next) => {
 });
 // Add token
 router.all("*", (req, res, next) => {
-  // res.cookie("XSRF-TOKEN", req.csrfToken(), {
-  //   sameSite: "none",
-  //   secure: false,
-  // });
+  res.cookie("XSRF-TOKEN", req.csrfToken(), {
+    sameSite: "none",
+    secure: false,
+  });
 
   const fullUrl = req.protocol + "://" + req.get("host") + req.originalUrl;
   console.log("[SERVER] connection:", req.method, fullUrl);
 
   return next();
 });
-
-// Controller
-// const { users } = require("../controllers");
 
 // Routes
 router.get("/", require("../controllers/main"));

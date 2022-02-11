@@ -1,4 +1,5 @@
 const form = document.getElementById("formContact");
+const inputToken = document.getElementsByClassName("token");
 const inputName = document.getElementById("name");
 const inputEmail = document.getElementById("email");
 const inputComments = document.getElementById("comments");
@@ -12,6 +13,7 @@ window.onload = function () {
     const { value: email } = inputEmail;
     const { value: comments } = inputComments;
     const { value: phone } = inputPhone;
+    const { value: csrf } = inputToken;
 
     if (!name) {
       alert("Por favor escriba su nombre!");
@@ -32,6 +34,7 @@ window.onload = function () {
         { name, email, comments, phone },
         {
           headers: {
+            "CSRF-Token": csrf,
             "Content-Type": "application/json",
           },
         }
@@ -49,7 +52,7 @@ window.onload = function () {
       })
       .catch((err) => {
         console.error("[Browser][Error] when send data:", err.message);
-        console.error("[Browser][Error] ata:", name, email, phone, comments);
+        console.error("[Browser][Error] Data:", name, email, phone, comments);
 
         canva[0].innerHTML =
           "<p>&nbsp;</p><h3 class='text-danger'><strong>¡Ups! :(</strong></h3> <h5><span class='text-secondary'>Algo salio mal intentalo más tarde.</span></h5><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>";
