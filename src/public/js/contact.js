@@ -1,5 +1,4 @@
 const form = document.getElementById("formContact");
-const inputToken = document.getElementsByClassName("token");
 const inputName = document.getElementById("name");
 const inputEmail = document.getElementById("email");
 const inputComments = document.getElementById("comments");
@@ -13,7 +12,6 @@ window.onload = function () {
     const { value: email } = inputEmail;
     const { value: comments } = inputComments;
     const { value: phone } = inputPhone;
-    const { value: csrf } = inputToken;
 
     if (!name) {
       alert("Por favor escriba su nombre!");
@@ -34,7 +32,6 @@ window.onload = function () {
         { name, email, comments, phone },
         {
           headers: {
-            "CSRF-Token": csrf,
             "Content-Type": "application/json",
           },
         }
