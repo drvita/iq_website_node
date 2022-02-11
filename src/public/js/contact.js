@@ -2,6 +2,8 @@ const form = document.getElementById("formContact");
 const inputName = document.getElementById("name");
 const inputEmail = document.getElementById("email");
 const inputComments = document.getElementById("comments");
+const inputPhone = document.getElementById("phone");
+const canva = document.getElementsByClassName("contactForm");
 
 window.onload = function () {
   form.addEventListener("submit", function (e) {
@@ -9,6 +11,7 @@ window.onload = function () {
     const { value: name } = inputName;
     const { value: email } = inputEmail;
     const { value: comments } = inputComments;
+    const { value: phone } = inputPhone;
 
     if (!name) {
       alert("Por favor escriba su nombre!");
@@ -23,12 +26,10 @@ window.onload = function () {
       return inputComments.focus();
     }
 
-    console.log("[DEBUG] entries:", name, email, comments);
-
     axios
       .post(
         "/process/contact",
-        { name, email, comments },
+        { name, email, comments, phone },
         {
           headers: {
             "Content-Type": "application/json",
@@ -36,8 +37,22 @@ window.onload = function () {
         }
       )
       .then(({ data }) => {
-        // TODO: if status is OK erase form if not show of message
         console.log("[DEBUG] Result:", data);
+
+        if (data.status) {
+          canva[0].innerHTML =
+            "<p>&nbsp;</p><h2><strong>¡Muchas gracias!</strong></h2> <h3><span class='text-primary'>Nos pondremos en contacto a la brevedad.</span></h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>";
+        } else {
+          canva[0].innerHTML =
+            "<p>&nbsp;</p><h3 class='text-danger'><strong>¡Ups! :(</strong></h3> <h5><span class='text-secondary'>Algo salio mal intentalo más tarde.</span></h5><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>";
+        }
+      })
+      .catch((err) => {
+        console.error("[Browser][Error] when send data:", err.message);
+        console.error("[Browser][Error] ata:", name, email, phone, comments);
+
+        canva[0].innerHTML =
+          "<p>&nbsp;</p><h3 class='text-danger'><strong>¡Ups! :(</strong></h3> <h5><span class='text-secondary'>Algo salio mal intentalo más tarde.</span></h5><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>";
       });
   });
 };

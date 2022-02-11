@@ -1,6 +1,5 @@
 const nodemailer = require("nodemailer");
 const { emailConfig: config } = require("../configs");
-//const mailTemplates = require("../../mailTemplates.js");
 const mailTransport = nodemailer.createTransport({
   host: config.mailServer,
   port: config.mailPort,
@@ -13,11 +12,6 @@ const mailTransport = nodemailer.createTransport({
 
 module.exports = function sendEmail(data) {
   return new Promise(async (resolve, reject) => {
-    // const mailHTML = await mailTemplates[data.name](data);
-    // if (!mailHTML) {
-    //   console.error("[SendMail][ERROR] no template found");
-    //   return reject({ code: 500, message: "Error in get file email template" });
-    // }
     const attachments = data.attachments ?? [];
     const mailOptions = {
       from: `IQISSMexico <${config.userMailAuth}>`,
