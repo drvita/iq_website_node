@@ -99,8 +99,8 @@ body .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7.5%;
   background-color: #01012F;
+  margin-top: 200px;
 }
 body .footer .mainFooter {
   max-width: 1440px;
@@ -147,6 +147,7 @@ body .footer .mainFooter .rightContent {
 body .contactForm {
   max-width: 1440px;
   width: 100%;
+  margin-top: 3%;
   padding-left: 2.4%;
   display: flex;
   justify-content: flex-start;
@@ -157,7 +158,7 @@ body .contactForm form {
 }
 body .mainTitleLandings {
   max-width: 1440px;
-  padding: 0% 5% 2% 5%;
+  margin: 0% 4% 0% 4%;
   border-bottom: 2px solid gray;
   margin-top: 5%;
 }
@@ -186,7 +187,6 @@ body .landingBanner .imgBanner .roundedDiv {
   background-position: 50%;
   border-radius: 50%;
   background-size: 100% auto;
-  background-image: url(../IMG/googleBanner.jpg);
 }
 body .landingBanner .imgBanner .roundedDiv img {
   width: 100%;
@@ -197,12 +197,16 @@ body .landingBanner .infoBanner {
 body .landingBanner .infoBanner .h2 {
   color: #FF6900;
 }
+body .landingBanner .infoBanner a {
+  text-decoration: none;
+}
 body .SubTitle {
   max-width: 1440px;
   display: flex;
   align-self: center;
   justify-content: flex-start;
   margin-top: 10%;
+  padding-left: 10.5%;
 }
 body .callToAction {
   width: 80%;
@@ -226,6 +230,7 @@ body .callToAction .callButton {
   align-items: center;
 }
 body .callToAction .callButton a {
+  text-decoration: none;
   font-size: large;
 }
 body .FrequentQuestions {
@@ -358,6 +363,59 @@ body .FrequentQuestions .FrequentQuestionsList li span {
     padding-top: 5%;
     padding-bottom: 5%;
     border-top: 3px solid #007BFF;
+  }
+  body .landingBanner {
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20%;
+  }
+  body .landingBanner .imgBanner {
+    width: 100%;
+  }
+  body .landingBanner .imgBanner .roundedDiv {
+    margin: auto;
+  }
+  body .landingBanner .infoBanner {
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+  }
+  body .landingBanner .infoBanner .h2 {
+    color: #FF6900;
+    margin-bottom: 10%;
+  }
+  body .landingBanner .infoBanner a {
+    text-decoration: none;
+    margin-top: 10%;
+  }
+  body .SubTitle {
+    max-width: 1440px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 25%;
+    padding-left: 0%;
+  }
+  body .callToAction {
+    flex-direction: column;
+    margin-top: 20%;
+    text-align: center;
+  }
+  body .callToAction .callText {
+    width: 100%;
+    justify-content: space-between;
+  }
+  body .callToAction .callButton {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  body .mainTitleLandings .h1 {
+    font-size: 2.5rem;
+  }
+  body .mainTitleLandings .h4 {
+    margin-top: 5%;
+    font-size: 1.3rem;
   }
 }
 

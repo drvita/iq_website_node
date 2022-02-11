@@ -6,4 +6,7 @@ module.exports = {
     // TODO: quit contact in bar when be in contact view
     res.render("pages/contact");
   },
+  socialNetowork: function (req, res) {
+    res.render("pages/lan_socialnetwork");
+  },
 };
