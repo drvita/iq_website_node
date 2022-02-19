@@ -27,7 +27,7 @@ router.all("*", (req, res, next) => {
   // });
 
   const fullUrl = req.protocol + "://" + req.get("host") + req.originalUrl;
-  console.log("[SERVER] connection:", req.method, fullUrl);
+  console.log("[SERVER] Request:", req.method, fullUrl);
 
   return next();
 });
