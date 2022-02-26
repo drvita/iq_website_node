@@ -9,8 +9,25 @@ body {
   align-items: center;
   font-family: "Nunito", sans-serif;
 }
+body .carrera {
+  color: #FF6900;
+}
+body .card-title {
+  display: flex;
+  justify-content: center;
+}
 body .card-title img {
   width: 50px;
+}
+body .card-title .imgPerson {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20%;
+  background-color: red;
+}
+body .card-title .imgPerson img {
+  width: 100%;
 }
 body .card-text {
   display: flex;
@@ -110,23 +127,34 @@ body .footer .mainFooter {
   padding: 2% 0 1.5% 1%;
 }
 body .footer .mainFooter .leftContent {
-  width: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 body .footer .mainFooter .leftContent .nosotrosTitle {
-  width: 100%;
+  width: 30%;
+  height: 30%;
+  margin-bottom: 2%;
   font-size: larger;
   font-weight: 700;
   border-left: 3px solid #007BFF;
   margin-left: 2.5%;
   padding-left: 1.7%;
+  display: flex;
+  padding-top: 2%;
 }
 body .footer .mainFooter .leftContent .nosotrosInfo {
-  width: 60%;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  padding-left: 2%;
 }
 body .footer .mainFooter .leftContent .nosotrosInfo .one {
-  width: 45%;
+  width: 50%;
+  padding-top: 2%;
+}
+body .footer .mainFooter .leftContent .nosotrosInfo .one a {
+  text-decoration: none;
+  color: #FF6900;
 }
 body .footer .mainFooter .leftContent .nosotrosInfo .one p {
   display: flex;
@@ -137,9 +165,35 @@ body .footer .mainFooter .leftContent .nosotrosInfo .one p img {
   margin-right: 4%;
   width: 16px;
 }
+body .footer .mainFooter .centerContent {
+  width: 20%;
+}
+body .footer .mainFooter .centerContent .nosotros {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body .footer .mainFooter .centerContent .nosotros a {
+  color: #FF6900;
+}
+body .footer .mainFooter .centerContent .nosotros .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 3px solid #007BFF;
+  padding-left: 5%;
+  padding-top: 4%;
+}
+body .footer .mainFooter .centerContent .nosotros .bottom {
+  padding-bottom: 25%;
+}
 body .footer .mainFooter .rightContent {
   width: 30%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-left: 2px solid #007BFF;
@@ -158,7 +212,7 @@ body .contactForm form {
 }
 body .mainTitleLandings {
   max-width: 1440px;
-  margin: 0% 4% 0% 4%;
+  margin: 0 4%;
   border-bottom: 2px solid gray;
   margin-top: 5%;
 }
@@ -262,7 +316,7 @@ body .FrequentQuestions .FrequentQuestionsList li span {
   }
   body .contactForm {
     width: 100%;
-    padding-left: 0%;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -351,9 +405,35 @@ body .FrequentQuestions .FrequentQuestionsList li span {
     margin-right: 4%;
     width: 16px;
   }
+  body .footer .mainFooter .centerContent {
+    width: 100%;
+  }
+  body .footer .mainFooter .centerContent .nosotros {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .footer .mainFooter .centerContent .nosotros a {
+    color: #FF6900;
+  }
+  body .footer .mainFooter .centerContent .nosotros .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 0;
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 10%;
+  }
+  body .footer .mainFooter .centerContent .nosotros .bottom {
+    padding-bottom: 25%;
+  }
   body .footer .mainFooter .rightContent {
     width: 100%;
-    margin-top: 5%;
+    margin-top: -15%;
     border-left: 0;
   }
   body .footer .mainFooter .rightContent p {
@@ -394,7 +474,7 @@ body .FrequentQuestions .FrequentQuestionsList li span {
     align-self: center;
     justify-content: center;
     margin-top: 25%;
-    padding-left: 0%;
+    padding-left: 0;
   }
   body .callToAction {
     flex-direction: column;

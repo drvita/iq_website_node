@@ -11,4 +11,7 @@ module.exports = {
   socialNetowork: function (req, res) {
     res.render("pages/lan_socialnetwork");
   },
+  us: function (req, res) {
+    res.render("pages/us");
+  },
 };

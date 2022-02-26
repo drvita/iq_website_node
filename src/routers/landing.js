@@ -5,6 +5,7 @@ module.exports = function (express) {
   router.get("/website", controller.website);
   router.get("/contact", controller.contact);
   router.get("/socialnetwork", controller.socialNetowork);
+  router.get("/us", controller.us);
 
   return router;
 };
