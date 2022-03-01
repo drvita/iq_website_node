@@ -20,10 +20,10 @@ body .NotFoundDiv {
 body .NotFoundDiv .h1 {
   font-weight: bold;
   font-size: 5rem;
-  color: #007BFF;
+  color: #007bff;
 }
 body .carrera {
-  color: #FF6900;
+  color: #ff6900;
 }
 body .card-title {
   display: flex;
@@ -129,7 +129,7 @@ body .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #01012F;
+  background-color: #01012f;
   margin-top: 200px;
 }
 body .footer .mainFooter {
@@ -150,7 +150,7 @@ body .footer .mainFooter .leftContent .nosotrosTitle {
   margin-bottom: 2%;
   font-size: larger;
   font-weight: 700;
-  border-left: 3px solid #007BFF;
+  border-left: 3px solid #007bff;
   margin-left: 2.5%;
   padding-left: 1.7%;
   display: flex;
@@ -167,7 +167,7 @@ body .footer .mainFooter .leftContent .nosotrosInfo .one {
 }
 body .footer .mainFooter .leftContent .nosotrosInfo .one a {
   text-decoration: none;
-  color: #FF6900;
+  color: #ff6900;
 }
 body .footer .mainFooter .leftContent .nosotrosInfo .one p {
   display: flex;
@@ -190,13 +190,13 @@ body .footer .mainFooter .centerContent .nosotros {
   align-items: center;
 }
 body .footer .mainFooter .centerContent .nosotros a {
-  color: #FF6900;
+  color: #ff6900;
 }
 body .footer .mainFooter .centerContent .nosotros .top {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 3px solid #007BFF;
+  border-left: 3px solid #007bff;
   padding-left: 5%;
   padding-top: 4%;
 }
@@ -209,7 +209,7 @@ body .footer .mainFooter .rightContent {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-left: 2px solid #007BFF;
+  border-left: 2px solid #007bff;
 }
 body .contactForm {
   max-width: 1440px;
@@ -231,7 +231,7 @@ body .mainTitleLandings {
 }
 body .mainTitleLandings .h1 {
   font-size: 3rem;
-  color: #007BFF;
+  color: #007bff;
   font-weight: 800;
 }
 body .landingBanner {
@@ -262,7 +262,7 @@ body .landingBanner .infoBanner {
   width: 70%;
 }
 body .landingBanner .infoBanner .h2 {
-  color: #FF6900;
+  color: #ff6900;
 }
 body .landingBanner .infoBanner a {
   text-decoration: none;
@@ -288,7 +288,7 @@ body .callToAction .callText {
   flex-direction: column;
 }
 body .callToAction .callText .h2 {
-  color: #FF6900;
+  color: #ff6900;
 }
 body .callToAction .callButton {
   width: 30%;
@@ -309,13 +309,13 @@ body .FrequentQuestions .FrequentQuestionsTitle {
   width: 100%;
 }
 body .FrequentQuestions .FrequentQuestionsTitle .h2 {
-  color: #01012F;
+  color: #01012f;
 }
 body .FrequentQuestions .FrequentQuestionsList h5 {
   color: black;
 }
 body .FrequentQuestions .FrequentQuestionsList li {
-  color: #FF6900;
+  color: #ff6900;
   font-size: large;
 }
 body .FrequentQuestions .FrequentQuestionsList li span {
@@ -393,7 +393,7 @@ body .FrequentQuestions .FrequentQuestionsList li span {
   body .footer .mainFooter .leftContent .nosotrosTitle {
     width: 54%;
     font-weight: 700;
-    border-bottom: 3px solid #007BFF;
+    border-bottom: 3px solid #007bff;
     border-left: 0;
     margin-top: 5%;
     padding: 0;
@@ -430,7 +430,7 @@ body .FrequentQuestions .FrequentQuestionsList li span {
     align-items: center;
   }
   body .footer .mainFooter .centerContent .nosotros a {
-    color: #FF6900;
+    color: #ff6900;
   }
   body .footer .mainFooter .centerContent .nosotros .top {
     display: flex;
@@ -455,7 +455,7 @@ body .FrequentQuestions .FrequentQuestionsList li span {
     margin-top: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
-    border-top: 3px solid #007BFF;
+    border-top: 3px solid #007bff;
   }
   body .landingBanner {
     flex-direction: column;
@@ -474,7 +474,7 @@ body .FrequentQuestions .FrequentQuestionsList li span {
     text-align: center;
   }
   body .landingBanner .infoBanner .h2 {
-    color: #FF6900;
+    color: #ff6900;
     margin-bottom: 10%;
   }
   body .landingBanner .infoBanner a {
