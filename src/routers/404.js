@@ -5,7 +5,7 @@ module.exports = function (req, res, next) {
 
   // respond with html page
   if (req.accepts("html")) {
-    res.status(404).send("Not found");
+    res.status(404).render("pages/404");
     return;
   }
 
